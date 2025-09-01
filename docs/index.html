@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Challenge - Special Sequence & String Reverse</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        
+        .challenge {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+        
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .example {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #27ae60;
+            margin: 10px 0;
+        }
+        
+        .sequence {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 18px;
+            text-align: center;
+            margin: 15px 0;
+            border: 2px solid #ffc107;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .note {
+            background: #d1ecf1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #17a2b8;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Code Challenge</h1>
+        
+        <div class="challenge">
+            <h2>1. Special Sequence Number</h2>
+            
+            <h3>📋 Objective</h3>
+            <p>Calculate the nth Special Sequence number.</p>
+            
+            <p>The Special sequence is a sequence in which each number is the sum of the two preceding ones. Numbers that are part of the special sequence are commonly denoted F<sub>n</sub>. The sequence starts from 0 and 1.</p>
+            
+            <div class="sequence">
+                0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+            </div>
+            
+            <h3>📝 Requirements</h3>
+            <ul>
+                <li><strong>Input:</strong> A single integer n representing the position in the special sequence.</li>
+                <li><strong>Output:</strong> The function should return the nth special number.</li>
+            </ul>
+            
+            <h3>⚠️ Constraints</h3>
+            <ul>
+                <li>Ensure the solution is efficient in terms of both time and space complexity.</li>
+                <li>The special sequence starts with 0 and 1, so fib(0) = 0 and fib(1) = 1.</li>
+            </ul>
+            
+            <h3>💡 Examples</h3>
+            <div class="example">
+                <strong>Input:</strong> 5<br>
+                <strong>Expected Output:</strong> 5<br>
+                <strong>Explanation:</strong> The sequence up to the 5th position is 0, 1, 1, 2, 3, 5.
+            </div>
+            
+            <div class="example">
+                <strong>Input:</strong> 10<br>
+                <strong>Expected Output:</strong> 55<br>
+                <strong>Explanation:</strong> The sequence up to the 10th position is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55.
+            </div>
+        </div>
+        
+        <div class="challenge">
+            <h2>2. String Reverse Check</h2>
+            
+            <h3>📋 Objective</h3>
+            <p>Write a function that checks whether a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).</p>
+            
+            <h3>�� Requirements</h3>
+            <ul>
+                <li><strong>Input:</strong> Your function should accept a single input argument, which is the string to be checked.</li>
+                <li><strong>Output:</strong> The function should return a boolean value:
+                    <ul>
+                        <li>Return <code>True</code> if the input string is a palindrome.</li>
+                        <li>Return <code>False</code> if the input string is not a palindrome.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>⚠️ Constraints</h3>
+            <ul>
+                <li>Consider only alphanumeric characters (i.e., letters and numbers) and ignore case sensitivity and spaces. Non-alphanumeric characters should be ignored.</li>
+                <li>An empty string should be considered a palindrome.</li>
+                <li>Your solution should aim to be efficient in terms of space and time complexity.</li>
+            </ul>
+            
+            <h3>💡 Examples</h3>
+            <div class="example">
+                <strong>Input:</strong> "Arara"<br>
+                <strong>Expected Output:</strong> True
+            </div>
+            
+            <div class="example">
+                <strong>Input:</strong> "race a car"<br>
+                <strong>Expected Output:</strong> False<br>
+                <strong>Explanation:</strong> After removing spaces and ignoring case, "raceacar" is not a palindrome as it does not read the same backward.
+            </div>
+            
+            <div class="example">
+                <strong>Input:</strong> " "<br>
+                <strong>Expected Output:</strong> True<br>
+                <strong>Explanation:</strong> An empty string or a string with only spaces is considered a palindrome.
+            </div>
+            
+            <div class="example">
+                <strong>Input:</strong> "No lemon, no melon"<br>
+                <strong>Expected Output:</strong> True<br>
+                <strong>Explanation:</strong> Ignoring punctuation, space, and capitalization, "nolemonnomelon" reads the same backward and forward.
+            </div>
+        </div>
+        
+        <div class="note">
+            <h3>🎯 Challenge Instructions</h3>
+            <p>Implement both solutions and test them with the provided examples. Focus on:</p>
+            <ul>
+                <li>Code readability and organization</li>
+                <li>Efficiency (time and space complexity)</li>
+                <li>Proper handling of edge cases</li>
+                <li>Clear variable naming and comments</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
